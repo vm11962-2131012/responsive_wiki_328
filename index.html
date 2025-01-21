@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <video autoplay muted loop id="myVideo">
+        <source src="img/12275372-hd_1920_1028_60fps.mp4" type="video/mp4">
+    </video>
 
     <!-- Navigation bar -->
     <div class="topnav" id="myTopnav">
@@ -50,11 +53,57 @@
         <br>- Mars Odyssey
         <br>
         <br>
-        <!-- Displaying the course cover image in a scaled size -->
-        Here is the course cover image in a scaled size:
-        <br>
-        <img src="img/nasa-yZygONrUBe8-unsplash.jpg" style="width: 100%; height: auto;">
-        <br>
+        
+        <!-- Container for the image gallery -->
+        <div class="container">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+            <img src="firefly.webp" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+            <img src="bca63abc2502a197ada2f60f2baf0b97fe4e8db8.jpeg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+            <img src="landsat9spacec.jpeg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+            <img src="22.Preparing_to_Install_on_Spacecraft.jpg" style="width:100%">
+        </div>
+      
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="firefly.webp" style="width:100%" onclick="currentSlide(1)" alt="Blue Ghost Mission I">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="bca63abc2502a197ada2f60f2baf0b97fe4e8db8.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Mars Reconnaissance Orbiter">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="landsat9spacec.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Landsat9">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="22.Preparing_to_Install_on_Spacecraft.jpg" style="width:100%" onclick="currentSlide(4)" alt="Mars Odyssey">
+          </div>
+        </div>
+      </div>
         <br>
     </div>
 
