@@ -9,6 +9,12 @@
 
     <!-- Including the Font Awesome CSS library for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        table, th, td {
+          border: .10px solid;
+        }
+        </style>
 </head>
 
 <body>
@@ -25,7 +31,7 @@
         <a href="section1.html">Mission 1</a>
         <a href="section2.html">Mission 2</a>
         <a href="section3.html">Mission 3</a>
-        <a href="section4.html">Mission 4</a>
+        <a href="section3.html">Mission 4</a>
 
         <!-- Additional links -->
         <a href="see_also.html">See Also</a>
@@ -40,70 +46,75 @@
     <!-- Page content -->
     <div class="content">
         <!-- Abstract section -->
-        <h2>GIS in Space</h2>
+        <h2>GIS in Space!</h2>
         In this site you will learn about some of the top missions set up by NASA using the help of advanced GIS technologies. From sending and recieving data from space, 
         spatial analysis is conducted on various exoplanets' surfaces and helps scientists and engineers. This access to spatial data helps with space missions to 
         study areas of the Moon's untouched surfaces and ranges to searching for the next habitable planet and with the help of some analysis can possibly lead to Mars. 
         <br>
-
-        <h4>Top 4 Space Missions</h4>
-        - Blue Ghost Mission I
-        <br>- Mars Reconnaissance Orbiter
-        <br>- Landsat 9
-        <br>- Mars Odyssey
         <br>
-        <br>
-        
-        <!-- Container for the image gallery -->
-        <div class="container">
 
-        <!-- Full-width images with number text -->
-        <div class="mySlides">
-          <div class="numbertext">1 / 4</div>
-            <img src="firefly.webp" style="width:100%">
-        </div>
-      
-        <div class="mySlides">
-          <div class="numbertext">2 / 4</div>
-            <img src="bca63abc2502a197ada2f60f2baf0b97fe4e8db8.jpeg" style="width:100%">
-        </div>
-      
-        <div class="mySlides">
-          <div class="numbertext">3 / 4</div>
-            <img src="landsat9spacec.jpeg" style="width:100%">
-        </div>
-      
-        <div class="mySlides">
-          <div class="numbertext">4 / 4</div>
-            <img src="22.Preparing_to_Install_on_Spacecraft.jpg" style="width:100%">
-        </div>
-      
-      
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      
-        <!-- Image text -->
-        <div class="caption-container">
-          <p id="caption"></p>
-        </div>
-      
-        <!-- Thumbnail images -->
+        <table>
+            <tr>
+              <th>Top 4 Space Missions</th>
+            </tr>
+            <tr>
+              <td>Blue Ghost Mission I</td>
+            </tr>
+            <tr>
+              <td>Mars Reconnaissance Orbiter</td>
+            </tr>
+            <tr>
+                <td>Landsat 9</td>
+            </tr>
+            <tr>
+                <td>Mars Odyssey</td>
+            </tr>
+          </table>
+
+        <br>
+        <h4>Spacecrafts Utilized</h4>
         <div class="row">
-          <div class="column">
-            <img class="demo cursor" src="firefly.webp" style="width:100%" onclick="currentSlide(1)" alt="Blue Ghost Mission I">
+            <div class="column">
+              <div class="card">
+                <img src="img/firefly.webp" alt="Blue Ghost Mission I" style="width:100%">
+                <div class="container">
+                  <h3>Firefly Aerospace Blue Ghost</h3>
+                  <p>Placed on the mission known as "Ghost Riders in the Sky", launched January 15, 2025.</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="img/bca63abc2502a197ada2f60f2baf0b97fe4e8db8.jpeg" alt="Mars Reconnaissance Orbiter" style="width:100%">
+                <div class="container">
+                  <h3>Mars Reconnaissance Orbiter</h3>
+                  <p>Known as the MRO, created by NASA and launched in 2006</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <img src="img/landsat9spacecr.jpeg" alt="Landsat 9" style="width:100%">
+                <div class="container">
+                  <h3>Landsat 9</h3>
+                  <p>Designed and built by Northrop Grumman, launched on September 27, 2021.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                  <img src="img/22.Preparing_to_Install_on_Spacecraft.jpg" alt="Mars Odyssey" style="width:100%">
+                  <div class="container">
+                    <h3>Mars Odyssey</h3>
+                    <p>Originially named the Mars Surveyor 2001 Orbiter, NASA spacecraft that launched on April 7, 2001 </p>
+                  </div>
+                </div>
+              </div>
           </div>
-          <div class="column">
-            <img class="demo cursor" src="bca63abc2502a197ada2f60f2baf0b97fe4e8db8.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Mars Reconnaissance Orbiter">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="landsat9spacec.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Landsat9">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="22.Preparing_to_Install_on_Spacecraft.jpg" style="width:100%" onclick="currentSlide(4)" alt="Mars Odyssey">
-          </div>
-        </div>
-      </div>
+        <br>
         <br>
     </div>
 

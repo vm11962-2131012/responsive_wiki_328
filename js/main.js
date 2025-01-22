@@ -18,3 +18,4 @@ function responsive_control() {
     x.className = "topnav";
   }
 }
+
